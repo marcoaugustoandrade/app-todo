@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ToDo App</title>
+</head>
+<body>
+  
+  <form>
+    <div>
+      <label for="descricao">Descrição</label>
+      <input type="text" name="descricao" id="descricao">
+    </div>
+    <div>
+      <label for="data">Data</label>
+      <input type="date" name="data" id="data">
+    </div>
+    <button id="btn-add-tarefa">Adicionar tarefa</button>
+  </form>
+
+  <div id="tabela-tarefas"></div>
+  
+  <script src="./assets//js/helper/DateHelper.js"></script>
+  <script src="./assets/js/model/Tarefa.js"></script>
+  <script src="./assets/js/model/ListaTarefas.js"></script>
+  <script src="./assets/js/service/TarefaService.js"></script>
+  <script src="./assets/js/view/TarefaView.js"></script>
+  <script src="./assets/js/controller/TarefaController.js"></script>
+  <script src="./assets/js/app.js"></script>
+</body>
+</html>
